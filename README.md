@@ -115,21 +115,19 @@ Esto redirecciona subdominios o directamente asocia dominios a otro existente. P
 
 Al tener una base de datos tal que esta base de datos:
 
-$TTL 38400	; 10 hours 40 minutes
-@		IN SOA	www.tiendaelectronica.int. some.email.address. (
-				10000002   ; serial
-				10800      ; refresh (3 hours)
-				3600       ; retry (1 hour)
-				604800     ; expire (1 week)
-				38400      ; minimum (10 hours 40 minutes)
-				)
-@		IN NS	www.tiendaelectronica.int.
+
 ns		IN A		33.28.5.1
+
 test	IN A		33.28.5.4
+
 www     IN A        33.28.5.7
+
 cosas   IN A        33.28.5.9
+
 alias	IN CNAME	test
+
 texto	IN TXT		mensaje
+
 
 El dominio de "test" está asociado al "alias" en su CNAME, si nosotros lanzamos un dig con la siguiente sintáxis.
 
