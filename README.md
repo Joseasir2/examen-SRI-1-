@@ -249,6 +249,13 @@ zone "255.in-addr.arpa" {
 };
 
 
+Para crear ahora la base de datos lo haremos en /var/lib/bind
+
+EN ESA CARPTEA CREAREMOS LA BASE DE DATOS db.asircastelao.int
+
+
+
+
 Desde el host hacemos dig y nos tienes que dar lo siguiente:
 
 ;; ANSWER SECTION:
